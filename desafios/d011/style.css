@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* 1. Define a altura para ocupar 100% da tela visível */
+    height: 100vh;
+
+    /* 2. Aplica as duas imagens (a primeira fica no topo) */
+    background-image: url('imagens/astronauta.png'), url('imagens/espaco.jpg');
+
+    /* 3. Centraliza ambas as imagens na tela */
+    background-position: center center, center center;
+
+    /* 4. Evita que as imagens fiquem se repetindo */
+    background-repeat: no-repeat, no-repeat;
+
+    /* 5. O astronauta mantém o tamanho original (auto) e o espaço cobre a tela toda (cover) */
+    background-size: auto, cover;
+    
+    /* 6. Mantém o fundo fixo ao rolar a página */
+    background-attachment: fixed, fixed;
+}

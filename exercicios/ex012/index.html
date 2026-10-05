@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no próprio dervidor.</p>
+    <!-- <video src="mdia/meu-video.mp4" width="500" controls poster="magens/tumb.jfif"></video> -->>
+
+    <!-- 2ªforma de fazer-->>
+
+    <video width="560" poster="magens/tumb.jfif" controls loop>
+        <source src="mdia/meu-video.mp4" type="video/mp4">
+        <source src="mdia/meu-video.m4v" type="video/mp4">
+        <source src="mdia/meu-video.webm" type="video/webm">
+        <source src="mdia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatiblidade com reprodução de video.</p>
+    </video>
+<h1>Inserindo videos do youtube</h1>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/1051369991?h=7d9a692c1c" width="560" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+
+</body>
+</html>

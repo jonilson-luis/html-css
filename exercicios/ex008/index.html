@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações de Textos</title>
+</head>
+<body>
+
+    <h1>Formatações de Textos</h1>
+
+    <hr>
+
+    <h2>Negrito / Destaque</h2>
+    <p><b>Contexto de uso:</b> Use a tag B para destacar palavras-chave em um parágrafo sem indicar importância (como nomes de produtos). Use a tag STRONG para alertas, avisos graves ou termos fundamentais para a compreensão do texto.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica).</p>
+                <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
+                <p><b>Diferença:</b> A tag B apenas aplica estilização visual em negrito e não possui significado semântico. A tag STRONG indica que o conteúdo possui forte importância teórica ou prática, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Painel de Autenticação):</b></p>
+                <p><strong>Erro Crítico:</strong> O sistema identificou uma tentativa de acesso não autorizada.</p>
+                <p>Por favor, verifique se o seu dispositivo da marca <b>AcessoSeguro</b> está homologado antes de tentar novamente.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Itálico / Ênfase</h2>
+    <p><b>Contexto de uso:</b> Use a tag I para termos em outros idiomas, termos técnicos ou pensamentos internos. Use a tag EM quando a pronúncia ou a ênfase de uma palavra muda o sentido da frase.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Nesta frase temos um <i>termo em itálico</i> usando a tag I (não semântica).</p>
+                <p>Nesta frase temos um <em>termo com ênfase</em> usando a tag EM (semântica).</p>
+                <p><b>Diferença:</b> A tag I apenas altera o estilo visual para itálico e não possui significado semântico. A tag EM aplica uma ênfase verbal ou contextual ao texto, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Artigo Científico / Tutorial):</b></p>
+                <p>Para iniciar o projeto, execute o comando no seu terminal em modo <i>root</i>.</p>
+                <p>Nós <em>devemos</em> fazer o backup dos dados hoje, caso contrário perderemos o progresso do cliente.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Sublinhado</h2>
+    <p><b>Contexto de uso:</b> A tag U deve ser usada de forma restrita para identificar termos que exigem uma marcação visual inferior sem dar importância, como nomes próprios em idiomas específicos ou erros de digitação apontados em revisões.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Nesta frase temos um <u>texto sublinhado</u> usando a tag U (não semântica).</p>
+                <p><b>Diferença:</b> A tag U apenas aplica um sublinhado visual ao texto e não possui significado semântico no HTML.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Dicionário de Correções):</b></p>
+                <p>O utilizador digitou a palavra <u>excessão</u>, mas a grafia correta da palavra é exceção.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Texto Riscado / Removido</h2>
+    <p><b>Contexto de uso:</b> Use a tag S para mostrar informações antigas que não são mais válidas (como preços antigos). Use a tag DEL para documentar a remoção de texto em sistemas de revisão de documentos ou propostas de lei editadas.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Nesta frase temos um <s>texto riscado</s> usando a tag S (não semântica).</p>
+                <p>Nesta frase temos um <del>texto removido</del> usando a tag DEL (semântica).</p>
+                <p><b>Diferença:</b> A tag S renderiza um risco sobre o texto para indicar que a informação já não é correta, mas não possui valor semântico estrutural. A tag DEL indica formalmente a remoção real de um conteúdo em revisões do documento, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (E-commerce e Revisão Contratual):</b></p>
+                <p>Compre o curso de: <s>15.000 Kz</s> por apenas 10.000 Kz.</p>
+                <p><b>Cláusula 4:</b> O contratante terá o prazo de <del>15 dias úteis</del> para efetuar o pagamento da parcela.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Texto Inserido</h2>
+    <p><b>Contexto de uso:</b> Use a tag INS sempre em conjunto com a tag DEL para registrar o que entrou no lugar do texto que foi deletado durante uma atualização de documento.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Nesta frase temos um <ins>texto inserido</ins> usando a tag INS (semântica).</p>
+                <p><b>Diferença:</b> A tag INS documenta explicitamente a adição de um novo conteúdo ao texto em relação a uma versionamento anterior, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Log de Atualização de Termos de Uso):</b></p>
+                <p>Modificação no regulamento: O prazo de entrega foi alterado de <del>5 dias</del> para <ins>3 dias úteis</ins> devido à nova logística.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Texto Marcado</h2>
+    <p><b>Contexto de uso:</b> Use a tag MARK para destacar palavras condizentes com uma pesquisa ativa do usuário ou trechos cruciais que precisam saltar aos olhos em uma leitura rápida.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Nesta frase temos um <mark>texto destacado</mark> usando a tag MARK (semântica).</p>
+                <p><b>Diferença:</b> A tag MARK serve para evidenciar ou destacar um trecho de texto devido à sua relevância num determinado contexto de leitura ou pesquisa, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Resultado de Busca Interna):</b></p>
+                <p>Exibindo resultados para a pesquisa "banco de dados": O <mark>banco de dados</mark> MySQL é uma excelente opção relacional para sistemas robustos.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Texto Pequeno</h2>
+    <p><b>Contexto de uso:</b> Use a tag SMALL no rodapé de páginas web para incluir direitos autorais, termos de licenças de uso ou notas de desresponsabilização jurídica.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Nesta frase temos um <small>texto secundário</small> usando a tag SMALL (semântica).</p>
+                <p><b>Diferença:</b> A tag SMALL representa comentários impressos secundários, notas de rodapé ou desresponsabilizações legais, detendo valor semântico além da redução visual do tamanho do texto.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Rodapé de Página Comercial):</b></p>
+                <p><small>&copy; 2026 Zango Express. Todos os direitos reservados. Os preços apresentados no site podem sofrer alterações sem aviso prévio.</small></p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Subscrito e Sobrescrito</h2>
+    <p><b>Contexto de uso:</b> Use a tag SUB para fórmulas químicas ou índices matemáticos inferiores. Use a tag SUP para potências matemáticas, ordinais ou chamadas de notas de rodapé.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Fórmula da água: H<sub>2</sub>O usando a tag SUB (semântica).</p>
+                <p>Exemplo matemático: x<sup>2</sup> usando a tag SUP (semântica).</p>
+                <p><b>Diferença:</b> A tag SUB posiciona e formata o texto abaixo da linha base para fins tipográficos ou matemáticos, detendo valor semântico. A tag SUP posiciona e formata o texto acima da linha base para expoentes ou notas, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Artigo Académico):</b></p>
+                <p>A reação do ácido sulfúrico (H<sub>2</sub>SO<sub>4</sub>) foi documentada no 1<sup>o</sup> relatório de química aplicada.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Código</h2>
+    <p><b>Contexto de uso:</b> Use a tag CODE para trechos isolados de programação misturados no meio de um parágrafo comum.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Exemplo: <code>console.log("Olá mundo")</code> usando a tag CODE (semântica).</p>
+                <p><b>Diferença:</b> A tag CODE delimita uma sequência de texto como um fragmento de código de programação de computadores, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Documentação Técnica):</b></p>
+                <p>Para exibir uma mensagem de alerta na tela do navegador, os desenvolvedores utilizam a instrução <code>alert('Mensagem')</code> dentro do script.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Saída de Programa</h2>
+    <p><b>Contexto de uso:</b> Use a tag SAMP para mostrar logs, feedbacks de terminais ou saídas de erros geradas por sistemas corporativos.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Exemplo: <samp>Erro: ficheiro não encontrado</samp> usando a tag SAMP (semântica).</p>
+                <p><b>Diferença:</b> A tag SAMP identifica o texto como a saída gerada por um programa de computador, sistema operativo ou script, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Logs de Servidores):</b></p>
+                <p>Ao tentar conectar ao banco de dados MySQL via terminal, o sistema retornou: <samp>Access denied for user 'root'@'localhost'</samp>.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Entrada do Utilizador</h2>
+    <p><b>Contexto de uso:</b> Use a tag KBD para indicar textualmente em manuais quais teclas físicas o utilizador precisa acionar.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Pressione <kbd>Ctrl</kbd> + <kbd>C</kbd> usando a tag KBD (semântica).</p>
+                <p><b>Diferença:</b> A tag KBD identifica blocos de texto que representam entradas manuais inseridas pelo utilizador, como teclas de atalho ou comandos de terminal, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Guia de Atalhos de Software:</b></p>
+                <p>Para abrir as ferramentas de desenvolvedor no Google Chrome, utilize o atalho <kbd>F12</kbd> ou a combinação <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Variáveis</h2>
+    <p><b>Contexto de uso:</b> Use a tag VAR para marcar um parâmetro de equações físicas, matemáticas ou variáveis de um algoritmo de programação.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Fórmula: <var>x</var> + <var>y</var> usando a tag VAR (semântica).</p>
+                <p><b>Diferença:</b> A tag VAR delimita uma instância de uma variável em expressões matemáticas ou contextos de programação, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Função de Algoritmo):</b></p>
+                <p>Se a variável <var>totalVendas</var> for maior que <var>metaMensal</var>, calcule a comissão do vendedor.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Citações</h2>
+    <p><b>Contexto de uso:</b> Use a tag Q para frases curtas integradas na mesma linha do parágrafo. Use a tag BLOCKQUOTE para citações em blocos independentes.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Citação curta: <q>O conhecimento é poder</q> usando a tag Q (semântica).</p>
+                <blockquote>Esta é uma citação longa em bloco usando a tag BLOCKQUOTE (semântica)</blockquote>
+                <p><b>Diferença:</b> A tag Q é utilizada para citações curtas inseridas na própria linha do texto e adiciona aspas automaticamente, detendo valor semântico. A tag BLOCKQUOTE define uma secção de citação longa isolada em bloco estrutural, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Resenha de Livros):</b></p>
+                <p>O palestrante começou dizendo <q>A tecnologia move o mundo</q>, frase que resume bem o cenário atual.</p>
+                <p>Como consta nas diretrizes oficiais da empresa:</p>
+                <blockquote cite="https://exemplo.com/diretrizes">
+                    Toda e qualquer transação efetuada no sistema informatizado de vendas deve gerar um log automático de persistência no banco de dados relacional para auditorias futuras.
+                </blockquote>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Abreviações</h2>
+    <p><b>Contexto de uso:</b> Use a tag ABBR sempre para registrar o significado de siglas no atributo title para garantir acessibilidade.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Exemplo: <abbr title="HyperText Markup Language">HTML</abbr> usando a tag ABBR (semântica).</p>
+                <p><b>Diferença:</b> A tag ABBR define uma abreviatura ou sigla e armazena a sua expansão textual por meio do atributo `title`, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Documento Corporativo / TCC):</b></p>
+                <p>O desenvolvimento do <abbr title="Trabalho de Conclusão de Curso">TCC</abbr> exige a modelagem do <abbr title="Diagrama de Entidade Relacionamento">DER</abbr> antes da criação do banco.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Termo Definido</h2>
+    <p><b>Contexto de uso:</b> Use a tag DFN no momento exato em que explica um jargão ou palavra nova pela primeira vez no texto.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Exemplo: <dfn>HTML</dfn> é a linguagem de marcação da web usando a tag DFN (semântica).</p>
+                <p><b>Diferença:</b> A tag DFN indica a instância de definição de um termo técnico ou palavra dentro do conteúdo textual, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Glossário de Tecnologia):</b></p>
+                <p>A <dfn>Normalização de Dados</dfn> é um processo formal estruturado que visa eliminar a redundância e anomalias em bancos de dados relacionais.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Citações de Obra</h2>
+    <p><b>Contexto de uso:</b> Use a tag CITE para referenciar de forma semântica os títulos de livros, filmes ou artigos citados.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Exemplo: <cite>O Senhor dos Anéis</cite> usando a tag CITE (semântica).</p>
+                <p><b>Diferença:</b> A tag CITE define o título de uma obra intelectual (livros, filmes, músicas, artigos), detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Referências Bibliográficas:</b></p>
+                <p>Para a fundamentação teórica deste sistema de vendas, baseamo-nos nos conceitos presentes no livro <cite>Sistemas de Bancos de Dados</cite> de Elmasri e Navathe.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Contacto</h2>
+    <p><b>Contexto de uso:</b> Use a tag ADDRESS para agrupar as informações de comunicação do autor do documento.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <address>
+                    Nome: João Silva<br>
+                    Email: exemplo@email.com
+                </address>
+                <p><b>Diferença:</b> A tag ADDRESS fornece informações de contacto para a pessoa ou organização proprietária do documento ou secção, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Página de Fale Conosco):</b></p>
+                <h3>Suporte Técnico Zango Express</h3>
+                <address>
+                    Desenvolvido por Jonilson Luís.<br>
+                    Contacte em: <a href="mailto:suporte@zangoexpress.com">suporte@zangoexpress.com</a><br>
+                    Luanda, Angola.
+                </address>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Tempo / Data</h2>
+    <p><b>Contexto de uso:</b> Use a tag TIME para que motores de busca consigam processar fusos horários e cronologias corretas automaticamente.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Evento em <time datetime="2026-06-11">11 de Junho de 2026</time> usando a tag TIME (semântica).</p>
+                <p><b>Diferença:</b> A tag TIME traduz uma data, hora ou período legível por humanos numa representação legível por máquinas através do atributo `datetime`, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Data de Publicação de Notícia):</b></p>
+                <p>Artigo publicado em: <time datetime="2026-06-11T21:20">11 de Junho de 2026 às 21:20</time>.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Quebra de Linha e Separação Temática</h2>
+    <p><b>Contexto de uso:</b> Use a tag BR para quebras estruturais (como moradas ou poemas). Use a tag HR para transições abruptas de raciocínio.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Primeira linha<br>Segunda linha usando a tag BR (não semântica)</p>
+                <hr>
+                <p><b>Diferença:</b> A tag BR DOCUMENTE produz uma quebra de linha forçada no texto sem criar uma divisão semântica. A tag HR representa uma quebra temática ou transição de assunto entre parágrafos, detendo valor semântico estrutural.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Transição de Conteúdo):</b></p>
+                <p>Rua Direita do Zango, nº 44<br>Luanda, Angola</p>
+                <hr>
+                <p>Aqui iniciamos um assunto completamente diferente da morada acima exposta.</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Direção de Texto e Isolamento</h2>
+    <p><b>Contexto de uso:</b> Use a tag BDO para forçar inversão. Use a tag BDI em dados desconhecidos do banco de dados (como nomes internacionais) para evitar falhas de orientação no layout.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Exemplo invertido: <bdo dir="rtl">HTML</bdo> usando a tag BDO (não semântica)</p>
+                <p>Exemplo isolado: <bdi>nome123</bdi> usando a tag BDI (semântica)</p>
+                <p><b>Diferença:</b> A tag BDO substitui de forma estrita e visual a direção atual do texto de acordo com o atributo `dir`, sem valor semântico. A tag BDI isola uma parte do texto que pode ter uma direção desconhecida para evitar que ela afete bidirecionalmente os elementos adjacentes, detendo valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Cenário Prático Real (Feed de Comentários Dinâmico):</b></p>
+                <ul>
+                    <li>Utilizador <bdi>Carlos123</bdi>: Postou um comentário.</li>
+                    <li>Utilizador <bdi>إياد</bdi>: Postou um comentário (O nome em árabe não corrompe a ordenação sequencial da frase em português).</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Fontes e Tags Históricas Obsoletas</h2>
+    <p><b>Contexto de uso:</b> Não devem ser incorporadas em projetos atuais. São tags pertencentes a padrões antigos que funcionavam exclusivamente para controle visual e foram descontinuadas.</p>
+    
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <p><b>Exemplo Isolado:</b></p>
+                <p>Exemplo: <font color="red">texto antigo</font> usando a tag FONT (obsoleta)</p>
+                <p>Exemplo: <big>texto grande antigo</big> usando a tag BIG (obsoleta)</p>
+                <p>Exemplo: <tt>texto monoespaçado antigo</tt> usando a tag TT (obsoleta)</p>
+                <p>Exemplo: <strike>texto riscado antigo</strike> usando a tag STRIKE (obsoleta)</p>
+                <p><b>Diferença:</b> As tags FONT, BIG, TT e STRIKE são elementos obsoletos descontinuados do padrão HTML que serviam apenas para manipulação visual direta e não possuem qualquer valor semântico.</p>
+            </td>
+        </tr>
+    </table>
+    <p>Podemos também <mark style="background-color: rgb(110, 65, 20);">marcar um texto</mark> usando a tag MARK.</p>
+    <p>Podemos também <mark>marcar um texto</mark> usando a tag MARK.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>testo grande</big> e um<small> texto pequeno</small> neste parágrafo.</p>
+    <h2>Texto Deletado</h2>
+    <p>podemos marcar <del>um texto excluído</del> para indicar que ele deve ser lido, mas não deve ser considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um texto como inserido para dar uma ênfase e <s>indicar</s> que ele foi adicionado depois.</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo: X<sup>2</sup>+3</p>
+    h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo: H<sub>2</sub>O</p>
+</body>
+</html>

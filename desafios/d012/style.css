@@ -1,0 +1,107 @@
+/* Configurações Gerais */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte-passion: 'Passion One', cursive;
+    --fonte-sriracha: 'sriracha', cursive;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: #dedede;
+    font-family: var(--fonte-sriracha);
+}
+
+/* Cabeçalho */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+header > h1 {
+    font-family: var(--fonte-passion);
+    font-size: 3.5vw;
+    font-variant: small-caps;
+}
+
+header > p {
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
+
+/* Configurações Comuns das Seções */
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-size: 1.3em;
+    padding-left: 30px;
+}
+
+section > p{
+    max-width: 500px; /* Limita a largura do texto para dar o efeito de bloco centralizado */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente para as seções com imagem */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Seção de Texto Comum */
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.normal > p{
+    background-color: transparent; /* Remove o fundo preto nas seções normais */
+    padding: 0;
+}
+
+/* Seção com Efeito Parallax */
+section.imagem{
+    background-color: #333333;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5); /* Sombra interna para dar profundidade */
+
+    /* Configurações fundamentais do Parallax: */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+/* Imagens específicas de fundo para cada bloco */
+section#img01{
+    background-image: url(pacote-d012/imagens/background001.jpg);
+    background-position: center center;
+}
+
+section#img02{
+    background-image: url(pacote-d012/imagens/background002.jpg);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

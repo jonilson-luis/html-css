@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /* Configurações do fundo espacial */
+    background-image: url('../imagens/espaco.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Configurações do Flexbox para centralizar o astronauta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

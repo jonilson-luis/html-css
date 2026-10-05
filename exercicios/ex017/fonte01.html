@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            
+
+            /*
+    Tipos de medidas em CSS:
+
+    1) Medidas absolutas:
+       - px (pixels)
+       - pt (points)
+       - pc (picas)
+       - cm (centímetros)
+       - mm (milímetros)
+       - in (polegadas)
+       - Q (quarto de milímetro)
+
+       Características:
+       - Possuem um tamanho fixo.
+       - Não dependem do tamanho de outro elemento.
+       - São menos flexíveis para layouts responsivos.
+       - A unidade mais utilizada na Web é o px.
+
+    2) Medidas relativas:
+       - % (percentagem)
+       - em (relativa ao tamanho da fonte do elemento pai)
+       - rem (relativa ao tamanho da fonte do elemento raiz - <html>)
+       - vw (1% da largura da janela de visualização)
+       - vh (1% da altura da janela de visualização)
+       - vmin (1% da menor dimensão da viewport)
+       - vmax (1% da maior dimensão da viewport)
+       - ch (largura aproximada do caractere "0")
+       - ex (altura aproximada da letra "x")
+       - lh (altura da linha do elemento)
+       - rlh (altura da linha do elemento raiz)
+
+       Características:
+       - Variam conforme o contexto.
+       - Adaptam-se melhor a diferentes dispositivos.
+       - São recomendadas para layouts responsivos e acessibilidade.
+*/
+            font-size: 1em; 
+        }
+        h1 {
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+            text-decoration: underline;
+            }
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+         }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatem reprehenderit eligendi earum, nostrum mollitia adipisci sapiente deserunt optio pariatur perspiciatis eos corrupti obcaecati officiis quisquam ducimus molestias totam tempore?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, quia eum voluptate et labore ex nemo illo qui pariatur fugit necessitatibus rerum aliquid reiciendis laborum quis. Iure, neque provident.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero ipsum voluptatibus temporibus tempora natus reiciendis quod neque vel saepe, beatae quia fuga itaque nisi quisquam optio nihil voluptatem, laborum unde!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dignissimos officia alias veniam fuga labore et odit dolor voluptas, modi similique ullam deserunt. Accusamus neque debitis deserunt culpa itaque quo!</p>
+</body>
+</html>
